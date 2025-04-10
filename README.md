@@ -1,7 +1,7 @@
 # Discord Soundboard Downloader
 
 <p align="center">
-  <img src="https://i.imgur.com/XYVj9nS.png" alt="Discord Soundboard Downloader" width="200"/>
+  <img src="https://i.imgur.com/s2rwHq6.png" alt="Discord Soundboard Downloader" width="200"/>
 </p>
 
 <p align="center">

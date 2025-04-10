@@ -1,0 +1,15 @@
+{
+  "name": "discord-soundboard-downloader",
+  "version": "1.0.0",
+  "description": "Download sounds from Discord server soundboards",
+  "main": "discord-soundboard-downloader.js",
+  "scripts": {
+    "start": "node discord-soundboard-downloader.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "discord.js-selfbot-v13": "^3.6.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

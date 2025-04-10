@@ -14,7 +14,6 @@ const OUTPUT_FOLDER = './discord_sounds'; // Folder to save sounds
 const FORMATS = ['.mp3', '.ogg']; // Formats to check
 const MAX_RETRIES = 3; // Maximum number of download retries
 
-// Console color formatting
 const colors = {
     reset: "\x1b[0m",
     red: "\x1b[31m",
@@ -25,7 +24,6 @@ const colors = {
     cyan: "\x1b[36m"
 };
 
-// Custom error handler function for formatted output
 function handleError(error, context = '') {
     let errorMessage = '';
     
@@ -108,7 +106,7 @@ async function downloadFile(url, outputPath, attempt = 1) {
         fs.writeFileSync(outputPath, Buffer.from(response.data));
         
         const stats = fs.statSync(outputPath);
-        if (stats.size < 1000) { // Minimum 1 KB
+        if (stats.size < 1000) {
             fs.unlinkSync(outputPath);
             return false;
         }
@@ -183,7 +181,6 @@ class DiscordSoundboard {
     async downloadSound(soundId, soundName) {
         const sanitizedName = soundName.toString().replace(/[\\/:*?"<>|]/g, '_');
         
-        // Try the official URL first (without extension)
         const mainOutputPath = path.join(OUTPUT_FOLDER, `${sanitizedName}.mp3`);
         const mainUrl = `https://cdn.discordapp.com/soundboard-sounds/${soundId}`;
         
@@ -321,7 +318,6 @@ client.on('ready', async () => {
             await sleep(1000);
         }
         
-        // Output statistics
         console.log(`\n${colors.cyan}===== DOWNLOAD SUMMARY =====${colors.reset}`);
         console.log(`Found sounds: ${sounds.length}`);
         console.log(`Successfully downloaded: ${colors.green}${successCount}${colors.reset}`);
@@ -335,7 +331,6 @@ client.on('ready', async () => {
     }
 });
 
-// Custom error handling for login
 client.login(TOKEN).catch(err => {
     handleError(err, "Login error");
 });

@@ -124,10 +124,7 @@ Downloading: sound_name... OK
 - Normal successful download
 
 ```
-Large file detected: filename.mp3 (65536 bytes)
-File header (hex): 4f67675300020000
-File is actually OGG format.
-Renamed filename.mp3 to filename.ogg
+Downloading: sound_name... OK Renamed filename.mp3 to filename.ogg
 ```
 - The script detected a file with incorrect extension and fixed it
 

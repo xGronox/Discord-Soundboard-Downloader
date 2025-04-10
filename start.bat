@@ -4,7 +4,7 @@ color 0A
 setlocal enabledelayedexpansion
 
 echo =======================================================
-echo Discord Soundboard Downloader - Dependency Check
+echo Discord Soundboard Downloader - For Windows
 echo Created: xGronox
 echo =======================================================
 echo.

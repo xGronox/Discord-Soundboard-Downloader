@@ -65,7 +65,6 @@ const SERVER_ID = 'server-id'; // Server ID
 const OUTPUT_FOLDER = './discord_sounds'; // Folder to save sounds
 const FORMATS = ['.mp3', '.ogg', '.wav', '.opus']; // Formats to check
 const MAX_RETRIES = 3; // Maximum number of download retries
-const PREFER_MP3 = true; // Set to true to use .mp3 extension for all files
 ```
 
 ### How to get your Discord user token

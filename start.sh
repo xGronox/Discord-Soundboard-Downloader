@@ -8,7 +8,7 @@ NC='\033[0m' # No Color
 
 # Print banner
 echo -e "${GREEN}=======================================================${NC}"
-echo -e "${GREEN}Discord Soundboard Downloader - Dependency Check${NC}"
+echo -e "${GREEN}Discord Soundboard Downloader - For MacOS Linux${NC}"
 echo -e "${GREEN}Created: xGronox${NC}"
 echo -e "${GREEN}=======================================================${NC}"
 echo ""
